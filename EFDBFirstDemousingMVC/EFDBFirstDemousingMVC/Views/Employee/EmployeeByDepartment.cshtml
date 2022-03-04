@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EFDBFirstDemousingMVC.Models.Employee>
+@{
+    ViewBag.Title = "EmployeeByDepartment";
+}
+
+<h2>EmployeeByDepartment</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.Name) </td>
+        <td>@Html.DisplayNameFor(model => model.Gender) </td>
+        <td>@Html.DisplayNameFor(model => model.city) </td>
+        <td>@Html.DisplayNameFor(model => model.Salary) </td>
+    </tr>
+    @foreach (var emp in Model)
+    {
+<tr>
+    <td> @Html.DisplayFor(model => emp.Name)</td>
+    <td> @Html.DisplayFor(model => emp.Gender)</td>
+    <td> @Html.DisplayFor(model => emp.city)</td>
+    <td> @Html.DisplayFor(model => emp.Salary)</td>
+</tr>
+    }
+</table>
