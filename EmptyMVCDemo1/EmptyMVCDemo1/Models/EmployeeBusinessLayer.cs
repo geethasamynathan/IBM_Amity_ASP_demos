@@ -9,6 +9,7 @@ namespace EmptyMVCDemo1.Models
     {
         public Employee GetEmployeeDetails()
         {
+
             Employee employee = new Employee()
 
             {
@@ -19,6 +20,8 @@ namespace EmptyMVCDemo1.Models
                 City = "TUP",
                 Salary = 9000
             };
+            
+
             return employee;
         }
     }
